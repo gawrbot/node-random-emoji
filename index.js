@@ -1,9 +1,5 @@
-//common js syntax, don't use it
-// const emoji = require('node-emoji');
-
-//right way --> using ES js syntax
+import { argv } from 'node:process';
 import emoji from 'node-emoji';
-import { argv } from 'process';
 
 if (argv[2] && emoji.find(argv[2])) {
   console.log(emoji.get(argv[2]));
